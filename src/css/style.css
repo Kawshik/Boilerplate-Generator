@@ -1,0 +1,193 @@
+/* $primary-color: #28a745; */
+/* $primary-color: #FFE495; */
+/* $secondary-color: #ffc97b;
+$dark-color: #44558f;
+$light-color: #e6f7f7; */
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh; }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.navbar-dark {
+  background-color: #46466e; }
+
+.navbar-brand {
+  margin-top: 10px;
+  background-color: #46466e;
+  color: #dd105e;
+  border: 1px solid #dd105e;
+  border-radius: 5px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px; }
+
+#nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.center-container {
+  padding-top: 200px;
+  height: 70%; }
+  .center-container .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .center-container .content h1 {
+      border: 1px solid #dd105e;
+      border-radius: 5px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 960px;
+      /*padding: 10px 30px;*/
+      font-family: sans-serif;
+      font-size: 26px;
+      display: flex;
+      justify-content: center;
+      color: #dd105e; }
+      .center-container .content h1:hover {
+        background-color: #dd105e;
+        color: white;
+        border-color: #dd105e; }
+    .center-container .content p {
+      margin-top: 15px;
+      padding: 0;
+      color: #dd105e;
+      font-size: 16px; }
+
+footer {
+  z-index: 88;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 13px 17px 8px #820c39;
+  height: 13%;
+  width: 100%;
+  margin-top: 0px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row; }
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 5px solid #dd105e;
+    width: 50%;
+    display: flex;
+    flex-direction: row; }
+    footer .links .link {
+      color: #46466e;
+      text-decoration: none; }
+  footer .foo-brand {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  footer .copy {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #46466e; }
+
+@media only screen and (max-width: 480px) {
+  #nav-container {
+    flex-direction: row; }
+    #nav-container .navbar-brand {
+      margin-top: 0px; }
+    #nav-container .brand {
+      width: 50%; }
+    #nav-container .toggle-btn {
+      width: 50%;
+      display: flex;
+      flex-direction: row-reverse; }
+  .center-container {
+    padding-top: 100px; }
+    .center-container .content h1 {
+      /*padding-left: 10px;
+				padding-right: 10px;*/
+      font-size: 18px;
+      width: 100%; }
+    .center-container .content p {
+      font-size: 12px; }
+  .footer {
+    z-index: 1000; }
+    .footer .links .link {
+      font-size: 12px; }
+    .footer .copy {
+      font-size: 12px; } }
+
+/* CONTACT US PAGE */
+.contact {
+  width: 355px; }
+
+.detail {
+  /* @include border; */
+  padding: 0;
+  margin-top: 10px; }
+  .detail .form-name {
+    border-radius: 0px;
+    /* @include border; */
+    border: 0;
+    border-bottom: 1px solid #dd105e; }
+  .detail .form-email {
+    border-radius: 0px;
+    /* @include border; */
+    border: 0;
+    border-bottom: 1px solid #dd105e; }
+  .detail input {
+    padding: 10px; }
+    .detail input:focus {
+      outline: none; }
+
+.message {
+  padding: 10px;
+  /*@include border;*/
+  border: 0;
+  border-bottom: 1px solid #dd105e; }
+  .message textarea {
+    border: 0;
+    width: 100%; }
+    .message textarea:focus {
+      outline: none; }
+
+@media only screen and (max-width: 480px) {
+  input {
+    width: 100%; } }
+
+/* ABOUT US PAGE */
+.about-content {
+  padding-top: 200px; }
+
+@media only screen and (max-width: 480px) {
+  .about-content {
+    padding-top: 150px; }
+    .about-content h1 {
+      font-size: 26px; }
+    .about-content p {
+      font-size: 14px; } }
+
+/* 
+	Create mixin for ghost button
+	Seperate files for all components
+	Create form design for contact us page	
+*/

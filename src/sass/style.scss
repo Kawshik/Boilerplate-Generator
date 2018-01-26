@@ -1,0 +1,251 @@
+$bgcolor: white;
+/* $primary-color: #28a745; */
+
+/* $primary-color: #FFE495; */
+/* $secondary-color: #ffc97b;
+$dark-color: #44558f;
+$light-color: #e6f7f7; */
+
+$primary-color: #dd105e;
+$secondary-color: #46466e;
+$dark-color: #8787a3;
+$light-color: #bdbdd7;
+
+@mixin border{
+	border: 1px solid $primary-color;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+@mixin center{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+*{
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+}
+
+.center{
+	@include center;
+}
+
+.navbar-dark{
+	background-color: $secondary-color;
+}
+.navbar-brand{
+	margin-top: 10px;
+	background-color: $secondary-color; 
+	color: $primary-color;
+	@include border;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+#nav-container{
+	@include center;
+}
+
+
+.center-container{
+	padding-top: 200px;
+	height:70%;
+	.content{
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h1{
+			@include border;
+			@include center;
+			max-width: 960px;	
+			/*padding: 10px 30px;*/
+			font-family: sans-serif;
+			font-size: 26px;
+			display: flex;
+			justify-content: center;
+			color:$primary-color;
+			&:hover{
+				background-color:$primary-color;
+				color:white;
+				border-color: $primary-color;
+			}
+		}
+		p{
+			margin-top: 15px;
+			padding: 0;
+			color:$primary-color;
+			font-size: 16px;
+		}
+	}
+}
+
+
+footer{
+	z-index: 88;
+	@include center;
+	box-shadow: 0px 13px 17px 8px #820c39;
+	height:13%;
+	width:100%;
+	margin-top: 0px;
+	position: fixed;
+	bottom:0;
+	display:flex;
+	flex-direction: row;
+	.links{
+		@include center;
+		border-right: 5px solid $primary-color;
+		width:50%;
+		display: flex;
+		flex-direction: row;
+
+		.link{
+			color: $secondary-color;
+			text-decoration: none;
+		}
+
+	}
+	.foo-brand{
+		width:50%;
+		@include center;	
+	}
+	.copy{
+		width: 50%;
+		@include center;
+		color: $secondary-color;
+	}
+}
+
+
+@media only screen and (max-width:480px) {
+	#nav-container{
+		flex-direction: row;
+
+		.navbar-brand{
+			margin-top:0px;
+		}	
+
+		.brand{
+			width: 50%;
+		}
+
+		.toggle-btn{
+			width: 50%;
+			display: flex;
+			flex-direction: row-reverse;	
+		}
+	}
+
+	.center-container{
+		padding-top:100px;
+		.content{
+			h1{
+				/*padding-left: 10px;
+				padding-right: 10px;*/
+				font-size: 18px;
+				width:100%;
+			}
+			p{
+				font-size: 12px;	
+			}	
+		}
+	}
+
+	.footer{
+		z-index: 1000;
+		.links{
+			.link{
+				font-size: 12px;
+			}
+		}
+		.copy{
+			font-size: 12px;
+		}
+	}
+}
+
+
+
+
+/* CONTACT US PAGE */
+
+.contact{
+	width: 355px;
+}
+
+.detail{
+	/* @include border; */
+	padding: 0;
+	margin-top: 10px;
+	.form-name{
+		border-radius: 0px;
+		/* @include border; */
+		border: 0;
+		border-bottom: 1px solid $primary-color;
+	}
+	.form-email{
+		border-radius: 0px;
+		/* @include border; */
+		border: 0;
+		border-bottom: 1px solid $primary-color;
+	}
+	input{
+		padding: 10px;
+		&:focus{
+			outline:none;
+		}
+	}
+
+}
+.message{
+	padding: 10px;
+	/*@include border;*/
+	border: 0;
+	border-bottom: 1px solid $primary-color;
+	textarea{
+		border:0;
+		width:100%;
+		&:focus{
+			outline:none;
+		}
+	}
+}
+
+@media only screen and (max-width:480px){
+	input{
+		width:100%;
+	}
+}
+
+
+/* ABOUT US PAGE */
+.about-content{
+	padding-top: 200px;
+}
+
+@media only screen and (max-width:480px) {
+	.about-content{
+		padding-top: 150px;
+		h1{
+			font-size: 26px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+
+}
+
+/* 
+	Create mixin for ghost button
+	Seperate files for all components
+	Create form design for contact us page	
+*/

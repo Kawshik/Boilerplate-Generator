@@ -1,0 +1,20 @@
+{
+  "name": "boilerplate-generator",
+  "version": "1.0.0",
+  "description": "This is a HTML SASS JS Boilerplate Generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "initialize": "gulp initiate",
+    "build": "gulp build"
+  },
+  "author": "Kawshik Lodh",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}
