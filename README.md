@@ -28,7 +28,7 @@ ctrl+c
 ```js
 gulp run build
 ```
-+ You can now edit the files and develop your own website.
++ You can now edit the files in the src folder and develop your own website.
 
 ## Licence
 
