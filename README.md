@@ -1,5 +1,5 @@
 # Boilerplate Generator
->A simple **Development Environment** to create SASS project's without any hardle.
+>A simple **Development Environment** to create SASS project's with live-server without any hardle.
 >It gives you a simple wibsite already created that ypu can edit and move forward.  
 
 ## Usage
