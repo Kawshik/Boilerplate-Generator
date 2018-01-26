@@ -13,11 +13,6 @@ npm install
 
 + To start the project type the following command 
 ```js
-npm run initialize
-```
-
-+ To start working with it type the following command
-```js
 npm start
 ```
 
