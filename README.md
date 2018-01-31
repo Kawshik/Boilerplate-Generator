@@ -1,4 +1,4 @@
-# SASS Boilerplate Generator
+# Sassenvi
 >A simple **Development Environment** to create SASS project's with live-server without any hardle.
 >It gives you a simple website already created that you can edit and move forward.  
 
