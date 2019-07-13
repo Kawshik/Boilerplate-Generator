@@ -23,7 +23,7 @@ npm start
 
 + To build the project type the following command
 ```js
-gulp run build
+gulp build
 ```
 + You can now edit the files in the src folder and develop your own website.
 
